@@ -12,9 +12,9 @@ int main()
 	//regular for loop
 	for (int i = 0; i < passwordinput.length(); i++)
 	{
-		char newChar = char(passwordinput[i] + 1);
+		char newChar = char(passwordinput.at(i) + 1);
 		//if(newChar > )
-		passwordinput[i] = newChar;
+		passwordinput.at(i) = newChar;
 	}
 
 	cout << passwordinput << endl;
@@ -29,7 +29,7 @@ int main()
 	//regular for loop
 	for (int i = 0; i < Password.length(); i++)
 	{
-		Password[i] = char(Password[i] - 1);
+		Password.at(i) = char(Password.at(i) - 1);
 	}
 
 	cout << Password << endl;
